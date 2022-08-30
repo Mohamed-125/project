@@ -1,0 +1,406 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <link rel="stylesheet" href="../../styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- javascript  -->
+    <script src="../../sidebar.js" defer></script>
+    <title>  فواتير المبيعات</title>
+  </head>
+  <body>
+
+       <header>
+      <div class="nav-info">
+        <img src="../../assets/imgs/Ellipse 1.png" />
+        <h5>Fahd alharby</h5>
+        <!-- svgs -->
+
+        <img src="../../assets/imgs/ring svg.svg" />
+        <img src="../../assets/imgs/Component 6 – 1.svg" />
+      </div>
+
+      <div class="nav-search-logo">
+        <input placeholder="بحث" type="text" />
+        <img src="../../assets/imgs/logo.svg" />
+      </div>
+    </header>
+
+    <section class="main-section">
+      <!-- side bar -->
+ <div>
+  <nav class="sidebar close">
+    <i class="bx bx-chevron-right toggle"></i>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <div>
+            <li class="nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">الرئيسية</span>
+                <i class="bx bx-home-alt icon"></i>
+              </a>
+            </li>
+          </div>
+
+          <div>
+            <li class="nav-link">
+              <a href="../selling-point.html" class="link-closed">
+                <span class="text nav-text">نقاط البيع</span>
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li
+              class="contains-dropdown nav-link"
+              data-rotate="180deg"
+              class="link-closed"
+            >
+              <a class="link-closed">
+                <span class="text nav-text">المخزون</span>
+                <i class="bx bx-bell icon"></i>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li data-rotate="180deg" class="contains-dropdown nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">المصروفات</span>
+                <i class="bx bx-pie-chart-alt icon"></i>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li data-rotate="180deg" class="contains-dropdown nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">التقارير</span>
+                <i class="bx bx-heart icon"></i>
+              </a>
+            </li>
+          </div>
+          <div>
+            <li data-rotate="180deg" class="contains-dropdown nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">الموردين</span>
+                <i class="bx bx-wallet icon"></i>
+              </a>
+            </li>
+            <div class="dropdown hidden">
+              <a href="../الموردين/Suppliers.html">قائمه الموردين</a>
+              <a href="../الموردين/bills-of-exchange.html"> سندات الصرف </a>
+            </div>
+          </div>
+
+          <div>
+            <li data-rotate="180deg" class="contains-dropdown nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">المبيعات</span>
+                <i class="bx bx-wallet icon"></i>
+              </a>
+            </li>
+
+            <div class="dropdown hidden">
+              <a href="./sales.html">قائمه المبيعات</a>
+              <a href="./sales-return.html">مرتجع المبيعات</a>
+              <a href="./Quotations.html"> عروض الأسعار</a>
+              <a href="./sales-invoices.html"> فواتير المبيعات</a>
+            </div>
+          </div>
+          <div>
+            <li data-rotate="180deg" class="contains-dropdown nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">المشتريات</span>
+                <i class="bx bx-wallet icon"></i>
+              </a>
+            </li>
+          </div>
+
+          <div>
+            <li data-rotate="180deg" class="contains-dropdown nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">العملاء</span>
+                <i class="bx bx-wallet icon"></i>
+              </a>
+            </li>
+          </div>
+
+          <div>
+            <li data-rotate="180deg" class="contains-dropdown nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">الموظفين</span>
+                <i class="bx bx-wallet icon"></i>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar-part-two close">
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <div>
+            <li class="contains-dropdown nav-link">
+              <a class="link-closed">
+                <span class="text nav-text">ادارة النظام</span>
+                <i class="bx bx-home-alt icon"></i>
+              </a>
+            </li>
+            <div class="dropdown hidden">
+              <a href="../اداره النظام/users.html">المستخدمين</a>
+              <a href="../اداره النظام/bank-accounts.html"> حسابات البنكيه </a>
+              <a href="../اداره النظام/branches-warehouses.html"
+                >الفروع و المستودعات</a
+              >
+              <a href="../اداره النظام/payment-devices.html">اجهزه الدفع</a>
+              <a href="../اداره النظام/regions.html">المناطق</a>
+            </div>
+          </div>
+          <li class="nav-link">
+            <a class="link-closed">
+              <span style="color: #f13c47 !important" class="text nav-text"
+                >تسجيل الخروج</span
+              >
+              <i
+                style="color: #f13c47 !important"
+                class="bx bx-bar-chart-alt-2 icon"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <section  style='flex: 1;' class="data-table">
+        <div style="display: flex; justify-content: space-between; ">
+            <h3>فواتير المبيعات </h3>
+            <button style="background-color: transparent;">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="116.5" height="55" viewBox="0 0 116.5 55">
+  <defs>
+    <filter id="Rectangle_49" x="0" y="0" width="116.5" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="button" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_49)">
+      <rect id="Rectangle_49-2" data-name="Rectangle 49" width="98.5" height="37" rx="8" transform="translate(9 6)" fill="#4c70f0"/>
+    </g>
+    <text id="تصدير" transform="translate(82.5 23)" fill="#fff" font-size="15" font-family="Montserrat-Arabic-Light, Montserrat-Arabic" font-weight="300" letter-spacing="0.02em"><tspan x="-41.16" y="0">تصدير</tspan></text>
+    <g id="Q3_icons" data-name="Q3 icons" transform="translate(12 9.5)">
+      <path id="Path_471" data-name="Path 471" d="M4.675,4h12.15a.675.675,0,0,1,0,1.35H4.675a.675.675,0,1,1,0-1.35Z" transform="translate(0 0)" fill="#fff"/>
+      <path id="Path_472" data-name="Path 472" d="M21.2,14.183l-2.025-1.991a.641.641,0,0,0-.945,0L16.2,14.183a.709.709,0,0,0-.068.911.641.641,0,0,0,1.013.068l.878-.878v7.83a.675.675,0,1,0,1.35,0v-7.83l.877.878a.641.641,0,0,0,1.013-.068.709.709,0,0,0-.067-.911Z" transform="translate(-7.951 -5.29)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
+    </button>
+        </div>
+        <div class="table-options">
+
+            <div>
+                <div>
+                <label>من التاريخ</label><br><input type="date"><br>
+                </div>
+                <div>
+                <label>الى التاريخ</label><br><input type="date"><br>
+                </div> 
+                <div>
+                <label>   رقم عرض السعر </label><br><input type="number"><br>
+                </div> 
+                <div>
+                <label> رقم فاتورة المبيعات  </label><br><input type="number"><br>
+                </div> 
+                <div>
+                <label>طريقه الدفع</label><br>
+                <select>
+                    <option selected hidden disabled>--اختر--</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                </select><br>
+                </div> 
+                 <div>
+                <label>المنطقه</label><br>
+                <select>
+                    <option selected hidden disabled>--اختر--</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                </select><br>
+                </div> 
+                <div>
+                <label>الحالة</label><br> <select>
+                    <option selected hidden disabled>--اختر--</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                </select><br>
+                </div>
+             
+                  <div>
+                <label>العميل</label><br>
+                  <select>
+                    <option selected hidden disabled>--اختر--</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                </select>
+                <br>
+            </div>
+                <div>
+                 <label>الفرع/المستودع</label><br>
+                  <select>
+                    <option selected hidden disabled>--اختر--</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                </select><br>
+                </div>
+                   <div>
+                <label> المستخدم المدخل  </label><br>
+                <select>
+                    <option selected hidden disabled>--اختر--</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                    <option>نص هنا</option>
+                </select><br>
+                </div>
+                 <div style="margin-top: 23px;">
+<button style="background-color: transparent;">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="84" height="55" viewBox="0 0 84 55">
+  <defs>
+    <filter id="Rectangle_49" x="0" y="0" width="84" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="button" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_49)">
+      <rect id="Rectangle_49-2" data-name="Rectangle 49" width="66" height="37" rx="8" transform="translate(9 6)" fill="#4c70f0"/>
+    </g>
+    <text id="بـحـث" transform="translate(50 23)" fill="#fff" font-size="15" font-family="Montserrat-Arabic-Light, Montserrat-Arabic" font-weight="300" letter-spacing="0.02em"><tspan x="-33.57" y="0">بـحـث</tspan></text>
+  </g>
+</svg>
+</button> 
+<button style="background-color: transparent;">
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="93" height="56" viewBox="0 0 93 56">
+  <defs>
+    <filter id="Rectangle_49" x="0" y="0" width="93" height="56" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="button" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_49)">
+      <rect id="Rectangle_49-2" data-name="Rectangle 49" width="75" height="38" rx="8" transform="translate(9 6)" fill="#f13c47"/>
+    </g>
+    <text id="تـفـريـغ" transform="translate(59 23)" fill="#fff" font-size="15" font-family="Montserrat-Arabic-Light, Montserrat-Arabic" font-weight="300" letter-spacing="0.02em"><tspan x="-42.915" y="0">تـفـريـغ</tspan></text>
+  </g>
+</svg>
+</button> 
+           </div>
+        </div>
+
+         </div>
+         
+        <div style="background-color: white;padding-bottom: 60px;   border-top-left-radius: 20px; border-top-right-radius: 20px;">
+        <div class="data-table-title-div">
+    <h3>مبيعات الاصناف</h3>
+ </div>
+ <div class="table-div">
+<table class="demo">
+	<thead>	
+        <th>المستخدم</th>
+ 		<th>الفرع/المستودع</th>
+  		<th>  رقم عرض
+السعر<br>
+</th>
+		<th> المبلغ
+المرتجع
+<br>
+</th>
+		<th>   المرتجع
+غير
+الآجل<br>
+</th>
+		<th>   المرتجع
+الآجل<br>
+</th>
+		<th> المبلغ
+المسدد  <br>
+</th>
+		<th>طريقة الدفع<br></th>
+		<th>مبلغ الفاتورة</th>
+        <th>المنطقة</th>
+		<th>العميل</th>
+		<th>التاريخ</th>
+        <th>رقم</th>
+        
+	</tr>
+	</thead>	
+    <tbody>	
+  
+ <tr>
+		<td>
+            <div style="display: flex; align-items: center; justify-content:center;gap: 15px;">
+             <button style="background-color:transparent;"><img src="../../assets/imgs/Group 108.svg"/></button>المستخدم
+         </div>
+    </td>
+    <td>اسم الفرع او المستودع</td>
+    <td>   0    </td>
+    <td>  0</td>
+    <td> 0     </td>
+    <td> 0 </td>
+    <td> 0</td>
+		<td>اسم طريقه الدفع</td>
+		<td>0.00 SR</td>
+        <td>اسم المنطقه</td>
+		<td>اسم العميل هنا</td>
+		<td>11 August 2022</td>
+		<td>01</td>
+ 	</tr>
+ 
+
+
+	</tbody>
+
+</table>
+</div>
+
+   <div class="pagination">
+    <button><img src="../../assets/imgs/left arrow.svg"></button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>...</button>
+    <button>9</button>
+    <button><img src="../../assets/imgs/right arrow.svg"></button>
+  </div>
+  </div>
+      </section>
+
+      <!-- side bar -->
+    </section>
+
+  </body>
+</html>

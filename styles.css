@@ -1,0 +1,94 @@
+/* Google Font Import - Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+
+@import url("./styles/navbar.css");
+@import url("./styles/sidebar.css");
+@import url("./styles/dashboard.css");
+@import url("./styles/selling-points.css");
+@import url("./styles/selling-points-navbar.css");
+@import url("./styles/data-table.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+a {
+  cursor: pointer;
+}
+@font-face {
+  font-family: "Montserrat-Arabic";
+  src: url("./assets/fonts/Montserrat-Arabic-Regular.woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Arabic-light";
+  src: url("./assets/fonts/Montserrat-Arabic-Light.woff");
+}
+
+:root {
+  /* ===== Colors ===== */
+  --blue-color: #4c70f0;
+  --sidebar-color: #23283b;
+  --primary-color: #f1f1f8;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #ffff;
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
+svg {
+  direction: ltr;
+}
+
+body {
+  min-height: 100vh;
+  transition: var(--tran-05);
+  font-family: "Montserrat-Arabic";
+}
+
+.main-section {
+  padding-top: 50px;
+  padding-inline: 10px;
+  direction: rtl;
+  background-color: #e0e2ef;
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+input,
+input::placeholder {
+  font-family: "Montserrat-Arabic";
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

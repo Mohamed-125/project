@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 103px;
+  padding-inline: 20px;
+  position: relative;
+  z-index: 80;
+  background-color: #fff;
+}
+
+header div {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav-search-logo input {
+  border-radius: 25px;
+  width: 200px;
+  height: 26px;
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+.nav-search-logo input::placeholder {
+  text-align: end;
+}

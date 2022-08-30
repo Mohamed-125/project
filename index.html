@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+    <link rel="stylesheet" href="styles.css" />
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- javascript  -->
+    <script src="app.js" defer></script>
+    <script src="sidebar.js" defer></script>
+    <script src="generator.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>DashBoard</title>
+  </head>
+
+  <body>
+    <!-- Coding by mohamed ibrahim | https://mohamed-125.github.io/portofolio/-->
+
+    <header>
+      <div class="nav-info">
+        <img src="./assets/imgs/Ellipse 1.png" />
+        <h5>Fahd alharby</h5>
+        <!-- svgs -->
+
+        <img src="./assets/imgs/ring svg.svg" />
+        <img src="./assets/imgs/Component 6 – 1.svg" />
+      </div>
+
+      <div class="nav-search-logo">
+        <input placeholder="بحث" type="text" />
+        <img src="./assets/imgs/logo.svg" />
+      </div>
+    </header>
+    
+        <section class="main-section">
+          <!-- side bar -->
+          <div>
+            <nav class="sidebar close">
+                    <i class="bx bx-chevron-right toggle"></i> 
+ 
+                <div class="menu-bar">
+                    <div class="menu">
+
+
+                        <ul class="menu-links">
+                          <div> 
+                             <li class="nav-link">
+                                <a   class="link-closed">
+                                    <span class="text nav-text">الرئيسية</span>
+                                    <i class="bx bx-home-alt icon"></i>
+                                </a>
+                            </li>
+                       </div>
+ 
+                       <div> 
+
+                            <li class="nav-link">
+                                <a href="./pages/selling-point.html" class="link-closed">
+                                    <span class="text nav-text">نقاط البيع</span>
+                                    <i class="bx bx-bar-chart-alt-2 icon"></i>
+                                </a>
+                            </li>
+                       </div>
+                       <div> 
+
+                            <li class="contains-dropdown nav-link" data-rotate="180deg" class="link-closed">
+                                <a class="link-closed">
+                                    <span class="text nav-text">المخزون</span>
+                                    <i class="bx bx-bell icon"></i>
+
+                                </a>
+                            </li>
+
+                             <div class="dropdown hidden">
+                                <a href="./pages/المخزون/اصناف تحت حد الطلب.html">اصناف تحت حد الطلب</a>
+                                <a href="./pages/المخزون/الاذوات المخزنيه.html"> الاذوات المخزنيه     </a>
+                                <a href="./pages/المخزون/الفئات.html">   الفئات     </a>
+                                <a href="./pages/المخزون/حركة الاصناف.html"> حركة الاصناف     </a>
+                                <a href="./pages/المخزون/سريالات الاصناف.html"> سريالات الاصناف     </a>
+                                <a href="./pages/المخزون/رصيد الفئات.html"> رصيد الفئات     </a>
+                            </div>
+                            
+                       </div>
+                       <div> 
+
+                            <li data-rotate="180deg" class="contains-dropdown nav-link">
+                                <a   class="link-closed">
+                                    <span class="text nav-text">المصروفات</span>
+                                    <i class="bx bx-pie-chart-alt icon"></i>
+
+                                </a>
+                            </li>
+
+                            <div class="dropdown hidden">
+                                <a href="./pages/المصروفات/تسجيل رصيد بداية.html">تسجيل رصيد البدايه</a>
+                                <a href="./pages/المصروفات/النقديه و المصروفات.html.html">النقديه و المصروفات</a>
+                            </div>
+                       </div>
+                       <div> 
+
+                            <li data-rotate="180deg" class="contains-dropdown nav-link">
+                                <a   class="link-closed">
+                                    <span class="text nav-text">التقارير</span>
+                                    <i class="bx bx-heart icon"></i>
+                                </a>
+                            </li>
+                <div class="dropdown hidden">
+                  <a href="./pages/التقارير/تقرير مبيعات الأصناف.html">تقرير مبيعات الأصناف</a>
+                  <a href="./pages/التقارير/تقارير رصيد الخزينه.html">تقرير رصيد الخزينه</a>
+                  <a href="./pages/التقارير/تقرير الأرباح و الخسائر.html     ">تقرير الأرباح و الخسائر</a>
+                  <a href="./pages/التقارير/تقرير الصندوق.html    ">تقرير الصندوق  </a>
+                  <a href="./pages/التقارير/تقرير ضريبة القيمة المضافة.html   ">تقرير ضريبة القيمة المضافة</a>
+                </div>
+                        </div>
+                       <div> 
+
+                            <li data-rotate="180deg" class="contains-dropdown nav-link">
+                                <a   class="link-closed">
+                                    <span class="text nav-text">الموردين</span>
+                                    <i class="bx bx-wallet icon"></i>
+                                </a>
+                            </li>
+                                <div class="dropdown hidden">
+                                <a href="./pages/الموردين/Suppliers.html">قائمه  الموردين</a>
+                                <a href="./pages/الموردين/bills-of-exchange.html"> سندات الصرف   </a>
+                            </div>
+                       </div>
+
+                       <div> 
+
+                            <li data-rotate="180deg" class="contains-dropdown nav-link">
+                                <a  class="link-closed">
+                                    <span class="text nav-text">المبيعات</span>
+                                    <i class="bx bx-wallet icon"></i>
+                                </a>
+                            </li>
+                       
+
+                            <div class="dropdown hidden">
+                                <a href="./pages/المبيعات/sales.html">قائمه  المبيعات</a>
+                                <a href="./pages/المبيعات/sales-return.html">مرتجع المبيعات</a>
+                                <a href="./pages/المبيعات/Quotations.html">   عروض الأسعار</a>
+                                <a href="./pages/المبيعات/sales-invoices.html"> فواتير المبيعات</a>
+                                <a href="./pages/المبيعات/add-invoice.html"> اضف فاتوره </a>
+                            </div>
+                        </div>
+
+                       <div>
+                            <li data-rotate="180deg" class="contains-dropdown nav-link">
+                                <a class="link-closed">
+                                    <span class="text nav-text">المشتريات</span>
+                                    <i class="bx bx-wallet icon"></i>
+                                </a>
+                            </li>
+                             <div class="dropdown hidden">
+                                <a href="./pages/المشتريات/purchases.html">المشتريات</a>
+                                <a href="./pages/المشتريات/purchases-returns.html">مرتجع المشتريات  </a>
+                             </div>
+                        </div>
+
+                       <div>
+                            <li data-rotate="180deg" class="contains-dropdown nav-link">
+                                <a   class="link-closed">
+                                    <span class="text nav-text">العملاء</span>
+                                    <i class="bx bx-wallet icon"></i>
+                                </a>
+                            </li>
+
+                            <div class="dropdown hidden">
+                                <a href="./pages/العملاء/clients.html">العملاء</a>
+                                <a href="./pages/العملاء/client-data.html">بيانات العميل</a>
+                                <a href="./pages/العملاء/سندات القبض.html">سندات القبض</a>
+                            </div>
+                        </div>
+                        
+                       <div>
+                            <li data-rotate="180deg" class="contains-dropdown nav-link">
+                                <a   class="link-closed">
+                                    <span class="text nav-text">الموظفين</span>
+                                    <i class="bx bx-wallet icon"></i>
+                                </a>
+                            </li>
+
+                             
+                        
+                         </div>
+                           <div> 
+
+                            <li data-rotate="180deg" class="contains-dropdown nav-link">
+                                <a  class="link-closed">
+                                    <span class="text nav-text">المبيعات</span>
+                                    <i class="bx bx-wallet icon"></i>
+                                </a>
+                            </li>
+                       
+
+                            <div class="dropdown hidden">
+                                <a href="./pages/المبيعات/sales.html">قائمه  المبيعات</a>
+                                <a href="./pages/المبيعات/sales-return.html">مرتجع المبيعات</a>
+                                <a href="./pages/المبيعات/Quotations.html">   عروض الأسعار</a>
+                                <a href="./pages/المبيعات/sales-invoices.html"> فواتير المبيعات</a>
+                                <a href="./pages/المبيعات/add-invoice.html"> اضف فاتوره </a>
+                            </div>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+
+             </nav> 
+
+             <div class="sidebar-part-two close">
+                <div class="menu-bar">
+                    <div class="menu">
+
+
+                        <ul class="menu-links">
+                           <div>
+                             <li class="contains-dropdown nav-link">
+                                <a   class="link-closed">
+                                    <span class="text nav-text">ادارة النظام</span>
+                                    <i class="bx bx-home-alt icon"></i>
+                                </a>
+                            </li>
+                            <div class="dropdown hidden">
+                                <a href="./pages/اداره النظام/users.html">المستخدمين</a>
+                                <a href="./pages/اداره النظام/bank-accounts.html"> حسابات البنكيه  </a>
+                                <a href="./pages/اداره النظام/branches-warehouses.html">الفروع و المستودعات</a>
+                                <a href="./pages/اداره النظام/payment-devices.html">اجهزه الدفع</a>
+                                <a href="./pages/اداره النظام/regions.html">المناطق</a>
+                                <a href="./pages/اداره النظام/settings.html">الاعدادت</a>
+                                <a href="./pages/اداره النظام/user-data.html">معلومات المؤسسة و الاشتراك</a>
+                            </div>
+                            </div>
+                            <li class="nav-link">
+                                <a   class="link-closed" >
+                                    <span style="color: #F13C47 !important;" class="text nav-text">تسجيل الخروج</span>
+                                    <i style="color: #F13C47 !important;" class="bx bx-bar-chart-alt-2 icon"></i>
+                                </a>
+                            </li>
+ 
+                        </ul>
+                    </div>
+                </div>
+             </div>
+
+            </div>
+           
+            
+            <section class="dashboard">
+
+                <div class="dashboard-first-section">
+                    <div class="dashboard-top-section">
+
+                       <div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path id="Path_56" data-name="Path 56"
+                                        d="M26.8,25.6H6.4V21.82l.24-.18,5.76-5.76,3.66,3.66,8.34-8.28v2.88a1.26,1.26,0,0,0,1.02,1.26,1.2,1.2,0,0,0,1.38-1.2v-6A1.2,1.2,0,0,0,25.6,7h-6a1.2,1.2,0,0,0-1.2,1.38A1.26,1.26,0,0,0,19.66,9.4h3.12L15.94,16,12.4,12.52l-6,6V5.2A1.2,1.2,0,1,0,4,5.2V28H26.8a1.2,1.2,0,0,0,0-2.4Z"
+                                        transform="translate(-4 -4)" fill="#fff" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="167.016" height="28.338"
+                                    viewBox="0 0 167.016 28.338">
+                                    <path id="Path_335" data-name="Path 335"
+                                        d="M3360.012-22365.254s-5.688-6.031-11.376-6.031-4.424,6.031-11.376,6.031-8.321-1.672-16.432-6.031-6.742-11.809-16.011-11.418-11.376,14.434-21.066,13.008c-4.458-.656-9.42-7.785-9.42-7.785s-4.465-8.916-8.276-10.93c-7.058-3.727-4.214,4.438-10.534,3.8s-6.846-8.246-14.746-6.34-9.48,11.895-16.854,13.957-2.428-5.539-10.9-5.426c-10.173.109-6.121-6.516-17.57-5.992"
+                                        transform="translate(-3194.409 22392.18)" fill="none" stroke="#fff"
+                                        stroke-linecap="round" stroke-width="2" />
+                                </svg>
+
+                            </div>
+
+                            <div style="margin-top: 20px;">
+                                <img src="./assets/imgs/arrow.svg" />
+                                <div style="display:flex; flex-direction: column; gap: 10px;">
+                                    <h3>SAR 1.2M</h3>
+                                    <p>إجمالي المبيعات</p>
+                                </div>
+                            </div>
+                        </div>      
+
+                        <div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path id="Path_56" data-name="Path 56"
+                                        d="M26.8,25.6H6.4V21.82l.24-.18,5.76-5.76,3.66,3.66,8.34-8.28v2.88a1.26,1.26,0,0,0,1.02,1.26,1.2,1.2,0,0,0,1.38-1.2v-6A1.2,1.2,0,0,0,25.6,7h-6a1.2,1.2,0,0,0-1.2,1.38A1.26,1.26,0,0,0,19.66,9.4h3.12L15.94,16,12.4,12.52l-6,6V5.2A1.2,1.2,0,1,0,4,5.2V28H26.8a1.2,1.2,0,0,0,0-2.4Z"
+                                        transform="translate(-4 -4)" fill="#fff" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="167.016" height="28.338"
+                                    viewBox="0 0 167.016 28.338">
+                                    <path id="Path_335" data-name="Path 335"
+                                        d="M3360.012-22365.254s-5.688-6.031-11.376-6.031-4.424,6.031-11.376,6.031-8.321-1.672-16.432-6.031-6.742-11.809-16.011-11.418-11.376,14.434-21.066,13.008c-4.458-.656-9.42-7.785-9.42-7.785s-4.465-8.916-8.276-10.93c-7.058-3.727-4.214,4.438-10.534,3.8s-6.846-8.246-14.746-6.34-9.48,11.895-16.854,13.957-2.428-5.539-10.9-5.426c-10.173.109-6.121-6.516-17.57-5.992"
+                                        transform="translate(-3194.409 22392.18)" fill="none" stroke="#fff"
+                                        stroke-linecap="round" stroke-width="2" />
+                                </svg>
+
+                            </div>
+
+                            <div style="margin-top: 20px;">
+                                <img src="./assets/imgs/arrow.svg" />
+                                <div style="display:flex; flex-direction: column; gap: 10px;">
+                                    <h3>SAR 1.2M</h3>
+                                    <p>إجمالي المبيعات</p>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div>
+                            <div>
+                                <svg id="Group_25" data-name="Group 25" xmlns="http://www.w3.org/2000/svg"
+                                    width="24.022" height="25.166" viewBox="0 0 24.022 25.166">
+                                    <path id="Path_50" data-name="Path 50"
+                                        d="M24.442,8h-14.3a1.144,1.144,0,1,0,0,2.288H23.87v14.87a1.144,1.144,0,0,0,2.288,0V9.715A1.659,1.659,0,0,0,24.442,8Z"
+                                        transform="translate(-5.568 -4.567)" fill="#fff" />
+                                    <path id="Path_51" data-name="Path 51"
+                                        d="M30.442,2h-14.3a1.144,1.144,0,0,0,0,2.288H29.87v14.87a1.144,1.144,0,0,0,2.288,0V3.715A1.659,1.659,0,0,0,30.442,2Z"
+                                        transform="translate(-8.137 -1.998)" fill="#fff" />
+                                    <path id="Path_52" data-name="Path 52"
+                                        d="M19.014,14H4.144A1.144,1.144,0,0,0,3,15.144V31.158A1.144,1.144,0,0,0,4.144,32.3h14.87a1.144,1.144,0,0,0,1.144-1.144V15.144A1.144,1.144,0,0,0,19.014,14ZM10.435,27.726H8.147a1.144,1.144,0,0,1,0-2.288h2.288a1.144,1.144,0,0,1,0,2.288Zm4.575-3.432H8.147a1.144,1.144,0,1,1,0-2.288h6.863a1.144,1.144,0,0,1,0,2.288Zm0-3.432H8.147a1.144,1.144,0,1,1,0-2.288h6.863a1.144,1.144,0,0,1,0,2.288Z"
+                                        transform="translate(-3 -7.136)" fill="#fff" />
+                                </svg>
+
+
+                            </div>
+
+                            <div style="margin-top: 20px;">
+                                <img src="./assets/imgs/arrow.svg" />
+                                <div style="display:flex; flex-direction: column; gap: 10px;">
+                                    <h3>2.8K</h3>
+                                    <p>إجمالي المبيعات</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-middle-section">
+
+                     
+
+
+                   <div >
+                    <h2 style="margin-right: 50px;">اجمالي المداخيل</h2>
+            <canvas id="multibar-chart-canvas"></canvas>
+                      </div>
+                           <div>
+                            <div class="middle-section-stat">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+                                        <g id="الموردين_-_suppliers" data-name="الموردين - suppliers"
+                                            transform="translate(-6 -3)">
+                                            <g id="Group_26" data-name="Group 26" transform="translate(6 3)">
+                                                <path id="Path_61" data-name="Path 61"
+                                                    d="M22,11a4,4,0,1,0-4-4A4,4,0,0,0,22,11Z"
+                                                    transform="translate(-10 -3)" fill="#fff" />
+                                                <path id="Path_62" data-name="Path 62"
+                                                    d="M28.667,27.667H19.333v-4H24a1.333,1.333,0,0,0,1.333-1.333V19.667A12,12,0,0,0,18,17a12,12,0,0,0-7.333,2.667v2.667A1.333,1.333,0,0,0,12,23.667h4.667v4H7.333A1.333,1.333,0,0,0,6,29v5.333a1.333,1.333,0,0,0,2.667,0v-4h8v4a1.333,1.333,0,0,0,2.667,0v-4h8v4a1.333,1.333,0,0,0,2.667,0V29A1.333,1.333,0,0,0,28.667,27.667Z"
+                                                    transform="translate(-6 -7.667)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                    <h3>7</h3>
+                                </div>
+
+                                <div>
+                                    <img src="./assets/imgs/arrow.svg" />
+                                    <p>إجمالي الموردين</p>
+                                </div>
+                            </div>
+                            <div class="middle-section-stat">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+                                        <g id="الموردين_-_suppliers" data-name="الموردين - suppliers"
+                                            transform="translate(-6 -3)">
+                                            <g id="Group_26" data-name="Group 26" transform="translate(6 3)">
+                                                <path id="Path_61" data-name="Path 61"
+                                                    d="M22,11a4,4,0,1,0-4-4A4,4,0,0,0,22,11Z"
+                                                    transform="translate(-10 -3)" fill="#fff" />
+                                                <path id="Path_62" data-name="Path 62"
+                                                    d="M28.667,27.667H19.333v-4H24a1.333,1.333,0,0,0,1.333-1.333V19.667A12,12,0,0,0,18,17a12,12,0,0,0-7.333,2.667v2.667A1.333,1.333,0,0,0,12,23.667h4.667v4H7.333A1.333,1.333,0,0,0,6,29v5.333a1.333,1.333,0,0,0,2.667,0v-4h8v4a1.333,1.333,0,0,0,2.667,0v-4h8v4a1.333,1.333,0,0,0,2.667,0V29A1.333,1.333,0,0,0,28.667,27.667Z"
+                                                    transform="translate(-6 -7.667)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                    <h3>7</h3>
+                                </div>
+
+                                <div>
+                                    <img src="./assets/imgs/arrow.svg" />
+                                    <p>إجمالي الموردين</p>
+                                </div>
+                            </div>
+                            <div class="middle-section-stat">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+                                        <g id="الموردين_-_suppliers" data-name="الموردين - suppliers"
+                                            transform="translate(-6 -3)">
+                                            <g id="Group_26" data-name="Group 26" transform="translate(6 3)">
+                                                <path id="Path_61" data-name="Path 61"
+                                                    d="M22,11a4,4,0,1,0-4-4A4,4,0,0,0,22,11Z"
+                                                    transform="translate(-10 -3)" fill="#fff" />
+                                                <path id="Path_62" data-name="Path 62"
+                                                    d="M28.667,27.667H19.333v-4H24a1.333,1.333,0,0,0,1.333-1.333V19.667A12,12,0,0,0,18,17a12,12,0,0,0-7.333,2.667v2.667A1.333,1.333,0,0,0,12,23.667h4.667v4H7.333A1.333,1.333,0,0,0,6,29v5.333a1.333,1.333,0,0,0,2.667,0v-4h8v4a1.333,1.333,0,0,0,2.667,0v-4h8v4a1.333,1.333,0,0,0,2.667,0V29A1.333,1.333,0,0,0,28.667,27.667Z"
+                                                    transform="translate(-6 -7.667)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                    <h3>7</h3>
+                                </div>
+
+                                <div>
+                                    <img src="./assets/imgs/arrow.svg" />
+                                    <p>إجمالي الموردين</p>
+                                </div>
+                            </div>
+                            <div class="middle-section-stat">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28">
+                                        <g id="الموردين_-_suppliers" data-name="الموردين - suppliers"
+                                            transform="translate(-6 -3)">
+                                            <g id="Group_26" data-name="Group 26" transform="translate(6 3)">
+                                                <path id="Path_61" data-name="Path 61"
+                                                    d="M22,11a4,4,0,1,0-4-4A4,4,0,0,0,22,11Z"
+                                                    transform="translate(-10 -3)" fill="#fff" />
+                                                <path id="Path_62" data-name="Path 62"
+                                                    d="M28.667,27.667H19.333v-4H24a1.333,1.333,0,0,0,1.333-1.333V19.667A12,12,0,0,0,18,17a12,12,0,0,0-7.333,2.667v2.667A1.333,1.333,0,0,0,12,23.667h4.667v4H7.333A1.333,1.333,0,0,0,6,29v5.333a1.333,1.333,0,0,0,2.667,0v-4h8v4a1.333,1.333,0,0,0,2.667,0v-4h8v4a1.333,1.333,0,0,0,2.667,0V29A1.333,1.333,0,0,0,28.667,27.667Z"
+                                                    transform="translate(-6 -7.667)" fill="#fff" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                    <h3>7</h3>
+                                </div>
+
+                                <div>
+                                    <img src="./assets/imgs/arrow.svg" />
+                                    <p>إجمالي الموردين</p>
+                                </div>
+                            </div>
+                          
+
+                        </div>
+                    </div>
+
+                    <div class="dashboard-third-section">
+                        <div>
+                            <div>
+                                <h3>فهد حربي</h3>
+                                <p>demo@gmail.com</p>
+<button>تفاصيل الإشتراك</button>                            </div>
+                            <div><img src="./assets/imgs/Ellipse 1.png"/></div>
+
+                        </div>
+                        <div>
+                            <img src="./assets/imgs/صافي الدخل.svg"/>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-second-section">
+                    <div class="best-products">
+                      <h2>افضل المنتجات</h2>
+                      <!-- اسم المنتج والنسبه -->
+                      <div>
+                        <div>
+                          <div>
+                            <p>اسم المنتج</p>
+                            <p>80 sales</p>
+                          </div>
+                          <div>
+                            <div></div>
+                          </div>
+                        </div>
+                      </div> 
+
+                      <div>
+                        <div>
+                          <div>
+                            <p>اسم المنتج</p>
+                            <p>80 sales</p>
+                          </div>
+                          <div>
+                            <div></div>
+
+                          </div>
+                        </div>
+                      </div>
+
+                       <div>
+                        <div>
+                          <div>
+                            <p>اسم المنتج</p>
+                            <p>80 sales</p>
+                          </div>
+                          <div>
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
+
+                       <div>
+                        <div>
+                          <div>
+                            <p>اسم المنتج</p>
+                            <p>80 sales</p>
+                          </div>
+                          <div>
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
+
+                       <div>
+                        <div>
+                          <div>
+                            <p>اسم المنتج</p>
+                            <p>80 sales</p>
+                          </div>
+                          <div>
+                            <div></div>
+                          </div>
+                        </div>
+                      </div>
+
+                     </div>
+                     <!-- اخر الفواتير و تتبع الاعمال -->
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="258" height="429" viewBox="0 0 258 429">
+  <defs>
+    <filter id="Rectangle_14" x="0" y="0" width="258" height="429" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#272d3b" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Card_1" data-name="Card 1" transform="translate(-1548 -146)">
+    <g transform="matrix(1, 0, 0, 1, 1548, 146)" filter="url(#Rectangle_14)">
+      <rect id="Rectangle_14-2" data-name="Rectangle 14" width="240" height="411" rx="20" transform="translate(9 6)" fill="#7033ff"/>
+    </g>
+    <text id="يمكنك_بسهولة_تتبع_تطور_اعمالك" data-name="يمكنك بسهولة
+تتبع تطور اعمالك" transform="translate(1781 398)" fill="#fff" font-size="21" font-family="Montserrat-Arabic-Regular, Montserrat-Arabic" letter-spacing="0.02em"><tspan x="-143.997" y="0">يمكنك بسهولة</tspan><tspan y="0"></tspan><tspan x="-168.714" y="35">تتبع تطور اعمالك</tspan></text>
+    <g id="Group_134" data-name="Group 134">
+      <circle id="Ellipse_67" data-name="Ellipse 67" cx="5" cy="5" r="5" transform="translate(1736 514)" fill="#fff" opacity="0.5"/>
+      <circle id="Ellipse_68" data-name="Ellipse 68" cx="5" cy="5" r="5" transform="translate(1750 514)" fill="#fff" opacity="0.5"/>
+      <circle id="Ellipse_69" data-name="Ellipse 69" cx="5" cy="5" r="5" transform="translate(1764 514)" fill="#fff"/>
+    </g>
+    <g id="Group_126" data-name="Group 126" transform="translate(1572 177)">
+      <path id="Path_135" data-name="Path 135" d="M314.585,211.155s2.746,6.522-3.433,9.612,16.477,8.925,18.88,1.373c0,0-6.179-2.4-3.433-9.612Z" transform="translate(-287.798 -188.979)" fill="#ffb9b9"/>
+      <path id="Path_136" data-name="Path 136" d="M119.461,552.567l-.343,7.209,5.836,1.03V553.6Z" transform="translate(-85.293 -395.656)" fill="#ffb9b9"/>
+      <path id="Path_137" data-name="Path 137" d="M29.111,552.567l.343,7.209-5.836,1.03V553.6Z" transform="translate(-16.913 -395.656)" fill="#ffb9b9"/>
+      <circle id="Ellipse_70" data-name="Ellipse 70" cx="9.612" cy="9.612" r="9.612" transform="translate(23.87 6.9)" fill="#ffb9b9"/>
+      <path id="Path_138" data-name="Path 138" d="M164.189,303.544l-.344,2.746,1.717,6.522,2.4-5.836Z" transform="translate(-117.319 -217.348)" fill="#ffb9b9"/>
+      <path id="Path_139" data-name="Path 139" d="M250.432,437.635l-2.06,24.372s-2.4,4.462-1.03,8.239c0,0-2.06,5.149-1.373,6.865s1.03,3.433.343,4.119-1.03,19.91,0,21.626,1.716,5.836,1.716,5.836,5.836,1.373,7.209-2.4.687-4.119,2.06-5.149,1.373-15.447,1.373-15.447-1.716-1.716-.686-2.4,1.716,0,.686-1.716-2.746-1.716-1.03-2.4a16.371,16.371,0,0,0,2.746-1.373l9.955-26.089s3.776,29.178,4.463,30.551,1.716-.343.687,1.373-1.373.687-1.03,1.716-2.06,15.791-.687,18.88a46.524,46.524,0,0,1,2.06,5.492s5.492,2.4,6.179.687.343-4.806,1.373-5.149,2.06-1.03,2.06-3.776,2.06-16.134,2.06-16.134-2.4-1.03-1.716-2.746.687-1.373.343-2.746-1.03-1.716-.343-2.746.687-4.119.687-4.119l4.119-27.119-3.181-9.268Z" transform="translate(-241.666 -350.409)" fill="#2f2e41"/>
+      <path id="Path_140" data-name="Path 140" d="M348.794,702.285s-1.03-1.03-1.373,0-.343,10.642-.343,10.642,2.746,2.06,2.746,3.089,2.06,4.463,6.866,3.776l.143-.022a4.544,4.544,0,0,0,3.379-6.433l-4.895-10.366S351.884,699.539,348.794,702.285Z" transform="translate(-314.283 -539.882)" fill="#2f2e41"/>
+      <path id="Path_141" data-name="Path 141" d="M243.444,702.285s1.03-1.03,1.373,0,.343,10.642.343,10.642-2.746,2.06-2.746,3.089-2.06,4.463-6.866,3.776l-.143-.022a4.545,4.545,0,0,1-3.379-6.433l4.895-10.366S240.355,699.539,243.444,702.285Z" transform="translate(-231.589 -539.882)" fill="#2f2e41"/>
+      <path id="Path_142" data-name="Path 142" d="M315.305,139.162l-1.717-.687s3.591-3.953,8.587-3.609l-1.405-1.547s3.435-1.375,6.557,2.234a30.476,30.476,0,0,1,4.724,6.64h1.839l-.767,1.69,2.686,1.69-2.757-.3a9.352,9.352,0,0,1-.261,4.377l.074,1.336s-3.2-4.945-3.2-5.633v1.719s-1.717-1.547-1.717-2.578l-.937,1.2-.468-1.891-5.776,1.891.937-1.547-3.591.516,1.405-1.891s-4.059,2.234-4.215,4.125-2.186,4.3-2.186,4.3l-.937-1.719S310.778,141.741,315.305,139.162Z" transform="translate(-289.15 -133.062)" fill="#2f2e41"/>
+      <path id="Path_143" data-name="Path 143" d="M395.038,266.157h3.825a1.237,1.237,0,0,1,1.208.965c.59,2.613,2.111,10.021,1.833,15.855-.343,7.209.343,12.358,0,13.388s0,1.373,0,2.4,1.03.343,0,1.716-1.03,1.03-1.03,2.06-3.433,16.82-3.433,16.82-2.36-3.879-4.956-3.141l.493-14.023.687-5.836-1.03-10.3Z" transform="translate(-346.796 -228.362)" fill="#3f3d56"/>
+      <path id="Path_144" data-name="Path 144" d="M283.9,246.7s-5.836-.212-7.724-2.681c0,0-12.186,4.054-13.559,7.486s4.806,18.88,4.806,18.88-10.642,31.581-5.492,31.581,16.82,4.119,23.686,1.716a88.238,88.238,0,0,1,13.044-3.433s.686-9.268,0-10.985-2.4-.687-1.373-3.089.687-2.746.343-3.776.687-2.4.687-3.776-.343-4.463-.343-4.463,9.268-21.626,7.209-23.686-12.544-6.028-12.544-6.028S289.738,248.078,283.9,246.7Z" transform="translate(-252.309 -212.514)" fill="#3f3d56"/>
+      <path id="Path_145" data-name="Path 145" d="M245.634,448.694s-3.089,16.134,2.06,14.761,2.746-14.761,2.746-14.761Z" transform="translate(-240.988 -359.065)" fill="#ffb9b9"/>
+      <path id="Path_146" data-name="Path 146" d="M249.218,266.157l-1.219.61a3.438,3.438,0,0,0-1.842,2.442l-4.834,25.784a35.613,35.613,0,0,0-1.373,3.433c0,.343.687.343,0,1.373s-1.716.686-1.03,1.373a2.126,2.126,0,0,1,.687,1.373l.687,16.82s5.836-1.716,7.552,0c0,0-1.716-5.149-.687-6.865a9.269,9.269,0,0,0,1.03-4.119s-.687,0,1.03-1.716,2.06-2.4,1.716-2.746-.687-3.433-.687-3.776S253.68,276.8,253.68,276.8Z" transform="translate(-236.676 -228.362)" fill="#3f3d56"/>
+      <path id="Path_147" data-name="Path 147" d="M522.4,148.1a1.99,1.99,0,0,0-1.988,1.988v84.054a1.99,1.99,0,0,0,1.988,1.988H645.642a1.99,1.99,0,0,0,1.988-1.988V150.09a1.99,1.99,0,0,0-1.988-1.988Z" transform="translate(-438.397 -143.831)" fill="#e6e6e6"/>
+      <path id="Path_148" data-name="Path 148" d="M532.4,158.1a1.99,1.99,0,0,0-1.988,1.988v78.375a1.99,1.99,0,0,0,1.988,1.988H649.963a1.99,1.99,0,0,0,1.988-1.988V160.09a1.99,1.99,0,0,0-1.988-1.988Z" transform="translate(-445.557 -150.991)" fill="#fff"/>
+      <path id="Path_149" data-name="Path 149" d="M329.713,112.509l6.217-4.547,24.574-3.9,15.1-3.9,8.29,3.28L395.144,87.5l7.7,1.624L414.388,76.46l5.921,1.949L433.929,56v56.478Z" transform="translate(-236.086 -40.098)" fill="#00ccf2" opacity="0.2"/>
+      <path id="Path_150" data-name="Path 150" d="M562.368,262.255a.568.568,0,0,1,0-1.136c26.243,0,51.27-5.255,70.472-14.8,18.005-8.947,29.479-21.079,31.479-33.287a.568.568,0,0,1,1.121.184c-1.039,6.341-4.411,12.561-10.023,18.488-5.534,5.845-12.961,11.1-22.072,15.632C613.99,256.958,588.783,262.255,562.368,262.255Z" transform="translate(-468.031 -189.986)" fill="#00ccf2"/>
+      <path id="Path_151" data-name="Path 151" d="M438.3,119.768H329.827V66.176h.568V119.2H438.3Z" transform="translate(-236.168 -47.384)" fill="#e6e6e6"/>
+    </g>
+    <g id="More_Button" data-name="More Button" transform="translate(1570 483.999)">
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M20,40A20,20,0,0,0,34.143,5.857,20,20,0,0,0,5.858,34.143,19.869,19.869,0,0,0,20,40Zm3.622-26.57a1,1,0,1,1,0,2H17.55l8.511,8.511a1,1,0,0,1-.708,1.708.989.989,0,0,1-.706-.294l-8.685-8.683L15.5,22.58a1,1,0,0,1-.991.919l-.082,0a.994.994,0,0,1-.919-1.073l.635-8.062a1,1,0,0,1,.635-.865h.006a.04.04,0,0,1,.017-.006.021.021,0,0,1,.014-.006l.006,0a.993.993,0,0,1,.314-.052h8.492Z" fill="#fff"/>
+    </g>
+  </g>
+    </svg>
+<!-- اخر الفواتير -->
+ <div class="latest-invoices">
+
+
+       <h2>آخر الفواتير</h2>
+
+    <div>
+      <h4>75 SR</h4>
+  <div style="display: flex; gap: 30px;align-items: center; flex-direction: row-reverse;">  
+      <div>
+        <p>فهد الحربي</p>
+      <p>منذ ساعتين </p>
+    </div>
+          <img src="./assets/imgs/unkown-user-img.svg"/>
+  </div>
+    </div>
+
+ <div>
+      <h4>75 SR</h4>
+  <div style="display: flex; gap: 30px;align-items: center; flex-direction: row-reverse;">  
+      <div>
+        <p>فهد الحربي</p>
+      <p>منذ ساعتين </p>
+    </div>
+          <img src="./assets/imgs/unkown-user-img.svg"/>
+  </div>
+    </div>
+
+  <div>
+      <h4>75 SR</h4>
+  <div style="display: flex; gap: 30px;align-items: center; flex-direction: row-reverse;">  
+      <div>
+        <p>فهد الحربي</p>
+      <p>منذ ساعتين </p>
+    </div>
+          <img src="./assets/imgs/unkown-user-img.svg"/>
+  </div>
+    </div>
+
+     <div>
+      <h4>75 SR</h4>
+  <div style="display: flex; gap: 30px;align-items: center; flex-direction: row-reverse;">  
+      <div>
+        <p>فهد الحربي</p>
+      <p>منذ ساعتين </p>
+    </div>
+          <img src="./assets/imgs/unkown-user-img.svg"/>
+  </div>
+    </div>
+ </div>
+
+
+                    </div>
+                </div>
+
+                
+            </section>
+
+<!-- side bar -->
+            
+           
+        </section> 
+
+     
+  </head>
+  <body>
+     
+   
+  </body>
+</html>
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- javascript  -->
+    <script src="../sidebar.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-info">
+        <img src="../assets/imgs/Ellipse 1.png" />
+        <h5>Fahd alharby</h5>
+        <!-- svgs -->
+
+        <img src="../assets/imgs/ring svg.svg" />
+        <img src="../assets/imgs/Component 6 – 1.svg" />
+      </div>
+
+      <div class="nav-search-logo">
+        <input placeholder="بحث" type="text" />
+        <img src="../assets/imgs/logo.svg" />
+      </div>
+    </header>
+    <section class="main-section">
+      <!-- side bar -->
+      <div>
+        <nav class="sidebar close">
+          <i class="bx bx-chevron-right toggle"></i>
+
+          <div class="menu-bar">
+            <div class="menu">
+              <ul class="menu-links">
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">الرئيسية</span>
+                    <i class="bx bx-home-alt icon"></i>
+                  </a>
+                </li>
+
+                <li class="nav-link">
+                  <a href="./pages/selling-point.html" class="link-closed">
+                    <span class="text nav-text">نقاط البيع</span>
+                    <i class="bx bx-bar-chart-alt-2 icon"></i>
+                  </a>
+                </li>
+
+                <li class="nav-link" class="link-closed">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">المخزون</span>
+                    <i class="bx bx-bell icon"></i>
+                  </a>
+                </li>
+
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">المصروفات</span>
+                    <i class="bx bx-pie-chart-alt icon"></i>
+                  </a>
+                </li>
+
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">التقارير</span>
+                    <i class="bx bx-heart icon"></i>
+                  </a>
+                </li>
+
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">الموردين</span>
+                    <i class="bx bx-wallet icon"></i>
+                  </a>
+                </li>
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">المبيعات</span>
+                    <i class="bx bx-wallet icon"></i>
+                  </a>
+                </li>
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">المشتريات</span>
+                    <i class="bx bx-wallet icon"></i>
+                  </a>
+                </li>
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">العملاء</span>
+                    <i class="bx bx-wallet icon"></i>
+                  </a>
+                </li>
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">الموظفين</span>
+                    <i class="bx bx-wallet icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="sidebar-part-two close">
+          <div class="menu-bar">
+            <div class="menu">
+              <ul class="menu-links">
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span class="text nav-text">ادارة النظام</span>
+                    <i class="bx bx-home-alt icon"></i>
+                  </a>
+                </li>
+
+                <li class="nav-link">
+                  <a href="#" class="link-closed">
+                    <span
+                      style="color: #f13c47 !important"
+                      class="text nav-text"
+                      >تسجيل الخروج</span
+                    >
+                    <i
+                      style="color: #f13c47 !important"
+                      class="bx bx-bar-chart-alt-2 icon"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section  style='flex: 1; border-top-left-radius: 20px; border-top-right-radius: 20px; background-color: white; ' class="data-table">
+ <div class="data-table-title-div">
+    <h3>المبيعات</h3>
+ </div>
+<table class="demo">
+	<thead>	
+        <th>المزيد</th>
+ 		<th>الحالة</th>
+		<th>الإجمالي</th>
+		<th>الخصم<br></th>
+		<th>الثمن</th>
+		<th>العميل</th>
+		<th>التاريخ</th>
+        <th><input type="checkbox" name="switch" class="check"></th>
+	</tr>
+	</thead>	
+    <tbody>	
+  
+ <tr>
+		<td>
+            <div style="display: flex; align-items: center; justify-content:center;gap: 15px;">
+            <button style="background-color:transparent;"><img src="../assets/imgs/more.svg"/></button>
+            <button style="background-color:transparent;"><img src="../assets/imgs/Group 107.png"/></button>
+            <button style="background-color:transparent;"><img src="../assets/imgs/Group 108.png"/></button>
+        </div>
+    </td>
+		<td><div class="data-table-status-completed"><p> مدفوع</p></div></td>
+		<td>اسم العميل هنا</td>
+		<td>200.00 SR</td>
+		<td>0.00 SR</td>
+		<td>اسم العميل هنا</td>
+		<td>11 August 2022</td>
+		<td><input type="checkbox" name="switch" class="check"></td>
+ 	</tr>
+
+       <tr>
+		<td>
+            <div style="display: flex; align-items: center; justify-content:center;gap: 15px;">
+            <button style="background-color:transparent;"><img src="../assets/imgs/more.svg"/></button>
+            <button style="background-color:transparent;"><img src="../assets/imgs/Group 107.png"/></button>
+            <button style="background-color:transparent;"><img src="../assets/imgs/Group 108.png"/></button>
+        </div>
+    </td>
+		<td><div class="data-table-status-partial"><p>جزئي</p></div></td>
+		<td>اسم العميل هنا</td>
+		<td>200.00 SR</td>
+		<td>0.00 SR</td>
+		<td>اسم العميل هنا</td>
+		<td>11 August 2022</td>
+		<td><input type="checkbox" name="switch" class="check"></td>
+ 	</tr>
+
+ <tr>
+		<td>
+            <div style="display: flex; align-items: center; justify-content:center;gap: 15px;">
+            <button style="background-color:transparent;"><img src="../assets/imgs/more.svg"/></button>
+            <button style="background-color:transparent;"><img src="../assets/imgs/Group 107.png"/></button>
+            <button style="background-color:transparent;"><img src="../assets/imgs/Group 108.png"/></button>
+        </div>
+    </td>
+		<td><div class="data-table-status-uncompleted"><p>غير مدفوع</p></div></td>
+		<td>اسم العميل هنا</td>
+		<td>200.00 SR</td>
+		<td>0.00 SR</td>
+		<td>اسم العميل هنا</td>
+		<td>11 August 2022</td>
+		<td><input type="checkbox" name="switch" class="check"></td>
+ 	</tr>
+
+
+	</tbody>
+
+</table>
+  <div class="pagination">
+    <button><img src="../assets/imgs/left arrow.svg"></button>
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>...</button>
+    <button>9</button>
+    <button><img src="../assets/imgs/right arrow.svg"></button>
+  </div>
+      </section>
+
+      <!-- side bar -->
+    </section>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+.selling-points-navbar {
+  background-color: white;
+  display: flex;
+  padding-inline: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selling-points-navbar a {
+  position: relative;
+}
+
+.selling-points-navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  height: 3px;
+  background: #000;
+  width: 0%;
+  transition: 0.3s all ease;
+}
+.selling-points-navbar a:hover::before {
+  width: 100%;
+}

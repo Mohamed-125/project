@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="366" height="220" viewBox="0 0 366 220">
+  <defs>
+    <filter id="Rectangle_187" x="0" y="0" width="366" height="220" filterUnits="userSpaceOnUse">
+      <feOffset dy="25" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="red_card" data-name="red card" transform="translate(-171.5 -361)">
+    <g transform="matrix(1, 0, 0, 1, 171.5, 361)" filter="url(#Rectangle_187)">
+      <rect id="Rectangle_187-2" data-name="Rectangle 187" width="276" height="130" rx="20" transform="translate(45 20)" fill="#f13c47"/>
+    </g>
+    <text id="إجمالي_المبيعات" data-name="إجمالي المبيعات" transform="translate(463.5 491.751)" fill="#fff" font-size="14" font-family="Montserrat-Arabic-Light, Montserrat-Arabic" font-weight="300"><tspan x="-97.958" y="0">إجمالي المبيعات</tspan></text>
+    <text id="_1.2M" data-name="$1.2M" transform="translate(381.5 466.75)" fill="#fff" font-size="28" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.02em"><tspan x="0" y="0">$1.2M</tspan></text>
+    <text id="_-_25_" data-name="- 25% " transform="translate(239.5 488)" fill="#f13c47" font-size="12" font-family="Montserrat-Light, Montserrat" font-weight="300" letter-spacing="0.02em"><tspan x="0" y="0">- 25% </tspan></text>
+    <path id="Path_335" data-name="Path 335" d="M3360.012-22365.254s-5.688-6.031-11.376-6.031-4.424,6.031-11.376,6.031-8.321-1.672-16.432-6.031-6.742-11.809-16.011-11.418-11.376,14.434-21.066,13.008-10.639-14.984-17.7-18.715-4.214,4.438-10.534,3.8-6.846-8.246-14.746-6.34-9.48,11.895-16.854,13.957-2.428-5.539-10.9-5.426c-10.173.109-6.121-6.516-17.57-5.992" transform="translate(-2896.511 22797.254)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <g id="More_Button" data-name="More Button" transform="translate(238.499 456.75)" style="isolation: isolate">
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M20,40A20,20,0,0,0,34.143,5.857,20,20,0,0,0,5.858,34.143,19.869,19.869,0,0,0,20,40Zm3.622-26.57a1,1,0,1,1,0,2H17.55l8.511,8.511a1,1,0,0,1-.708,1.708.989.989,0,0,1-.706-.294l-8.685-8.683L15.5,22.58a1,1,0,0,1-.991.919l-.082,0a.994.994,0,0,1-.919-1.073l.635-8.062a1,1,0,0,1,.635-.865h.006a.04.04,0,0,1,.017-.006.021.021,0,0,1,.014-.006l.006,0a.993.993,0,0,1,.314-.052h8.492Z" fill="#fff"/>
+    </g>
+    <g id="sellings_-_مبيعات" data-name="sellings - مبيعات" transform="translate(235.5 398.275)">
+      <path id="Path_56" data-name="Path 56" d="M26.8,25.6H6.4V21.82l.24-.18,5.76-5.76,3.66,3.66,8.34-8.28v2.88a1.26,1.26,0,0,0,1.02,1.26,1.2,1.2,0,0,0,1.38-1.2v-6A1.2,1.2,0,0,0,25.6,7h-6a1.2,1.2,0,0,0-1.2,1.38A1.26,1.26,0,0,0,19.66,9.4h3.12L15.94,16,12.4,12.52l-6,6V5.2A1.2,1.2,0,1,0,4,5.2V28H26.8a1.2,1.2,0,0,0,0-2.4Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>
